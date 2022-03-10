@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express();
 const router = require('./routes/tasks')
-const connectedDb = require('./db/connect')
 const notFound = require('./middleware/not-found')
 require('dotenv').config()
+const connectedDb = require('./db/connect')
 //middleware -used to access data in your routes
 
 app.use(express.static('./public'))
